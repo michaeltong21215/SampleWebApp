@@ -2,6 +2,8 @@ package com.sb.sampleWebApp.service;
 
 import com.sb.sampleWebApp.dao.ClusterDao;
 import com.sb.sampleWebApp.model.Cluster;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,13 +12,14 @@ import java.util.List;
 
 @Service
 public class ClusterServiceImpl implements ClusterService{
+    private static final Logger logger = LoggerFactory.getLogger(ClusterServiceImpl.class);
+
     @Autowired
     private ClusterDao clustersDao;
     @Override
     public List<Cluster> createClusters(List<Cluster> newClusters) {
         // dao to call create clusters
-        clustersDao.createClusters(newClusters);
-        return newClusters;
+        return clustersDao.createClusters(newClusters);
     }
 
     @Override
