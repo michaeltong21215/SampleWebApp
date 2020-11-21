@@ -1,9 +1,11 @@
 package com.sb.sampleWebApp.model;
 
-import java.util.List;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
+import java.util.List;
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Cluster {
-    private int name;
+    private String name;
     private int id;
 
     @Override
@@ -14,16 +16,16 @@ public class Cluster {
                 '}';
     }
 
-    public Cluster(int name, int id) {
+    public Cluster(String name, int id) {
         this.name = name;
         this.id = id;
     }
 
-    public int getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(int name) {
+    public void setName(String name) {
         this.name = name;
     }
 
