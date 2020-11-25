@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="395c2300-a2fe-46db-9f02-bb2db001b891" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SampleWebApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SampleWebApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sb/sampleWebApp/SampleWebAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sb/sampleWebApp/SampleWebAppApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sb/sampleWebApp/controller/ClusterResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sb/sampleWebApp/controller/ClusterResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sb/sampleWebApp/dao/ClusterDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sb/sampleWebApp/dao/ClusterDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sb/sampleWebApp/model/Cluster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sb/sampleWebApp/model/Cluster.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sb/sampleWebApp/model/ClusterMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sb/sampleWebApp/model/ClusterMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sb/sampleWebApp/service/ClusterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sb/sampleWebApp/service/ClusterServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
@@ -36,6 +35,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="Console" />
   </component>
@@ -91,22 +91,22 @@
       <screen x="0" y="23" width="1280" height="711" />
     </state>
     <state x="640" y="155" key="#xdebugger.evaluate/0.23.1280.711@0.23.1280.711" timestamp="1605985858624" />
-    <state width="1115" height="209" key="GridCell.Tab.0.bottom" timestamp="1605986844059">
+    <state width="1018" height="191" key="GridCell.Tab.0.bottom" timestamp="1606341349854">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1115" height="209" key="GridCell.Tab.0.bottom/0.23.1280.711@0.23.1280.711" timestamp="1605986844059" />
-    <state width="1115" height="209" key="GridCell.Tab.0.center" timestamp="1605986844057">
+    <state width="1018" height="191" key="GridCell.Tab.0.bottom/0.23.1280.711@0.23.1280.711" timestamp="1606341349854" />
+    <state width="1018" height="191" key="GridCell.Tab.0.center" timestamp="1606341349852">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1115" height="209" key="GridCell.Tab.0.center/0.23.1280.711@0.23.1280.711" timestamp="1605986844057" />
-    <state width="1115" height="209" key="GridCell.Tab.0.left" timestamp="1605986844056">
+    <state width="1018" height="191" key="GridCell.Tab.0.center/0.23.1280.711@0.23.1280.711" timestamp="1606341349852" />
+    <state width="1018" height="191" key="GridCell.Tab.0.left" timestamp="1606341349851">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1115" height="209" key="GridCell.Tab.0.left/0.23.1280.711@0.23.1280.711" timestamp="1605986844056" />
-    <state width="1115" height="209" key="GridCell.Tab.0.right" timestamp="1605986844058">
+    <state width="1018" height="191" key="GridCell.Tab.0.left/0.23.1280.711@0.23.1280.711" timestamp="1606341349851" />
+    <state width="1018" height="191" key="GridCell.Tab.0.right" timestamp="1606341349853">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1115" height="209" key="GridCell.Tab.0.right/0.23.1280.711@0.23.1280.711" timestamp="1605986844058" />
+    <state width="1018" height="191" key="GridCell.Tab.0.right/0.23.1280.711@0.23.1280.711" timestamp="1606341349853" />
     <state width="1115" height="209" key="GridCell.Tab.1.bottom" timestamp="1605986844062">
       <screen x="0" y="23" width="1280" height="711" />
     </state>

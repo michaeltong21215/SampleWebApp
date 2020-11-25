@@ -27,4 +27,15 @@ public class ClusterResource {
     public ResponseEntity<List<Cluster>> createClusters(@RequestBody List<Cluster> clusters){
         return new ResponseEntity<List<Cluster>>(clusterService.createClusters(clusters), HttpStatus.CREATED);
     }
+
+    @RequestMapping(value = "/cluster", method=RequestMethod.GET)
+    public List<Cluster> retrieveClusters(){
+        return clusterService.retrieveClusters();
+    }
+
+    @RequestMapping(value= "/cluster", method=RequestMethod.DELETE)
+    public List<Cluster> deleteClusters(@RequestBody List<Integer> ids) {
+        return clusterService.deleteClusters(ids);
+    }
+
 }
