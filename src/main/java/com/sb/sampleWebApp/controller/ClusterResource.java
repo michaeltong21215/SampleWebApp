@@ -38,4 +38,9 @@ public class ClusterResource {
         return clusterService.deleteClusters(ids);
     }
 
+    @PostMapping("/update/cluster")
+    public ResponseEntity<Cluster> updateCluster(@RequestBody Cluster updateCluster){
+        return new ResponseEntity<Cluster>(clusterService.updateCluster(updateCluster), HttpStatus.CREATED);
+    }
+
 }

@@ -32,6 +32,11 @@ public class ClusterServiceImpl implements ClusterService{
         return clustersDao.retrieveClusters();
     }
 
+    @Override
+    public Cluster updateCluster(Cluster updateCluster) {
+        return clustersDao.updateCluster(updateCluster);
+    }
+
     public Cluster retrieveClusterById(int id) {
         return clustersDao.retrieveClusterById(id);
     }
