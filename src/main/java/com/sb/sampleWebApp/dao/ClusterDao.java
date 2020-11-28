@@ -12,4 +12,6 @@ public interface ClusterDao {
     public List<Cluster> retrieveClusters();
 
     Cluster retrieveClusterById(int id);
+
+    Cluster updateCluster(Cluster updateCluster);
 }

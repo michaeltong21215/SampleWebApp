@@ -11,5 +11,7 @@ public interface ClusterService {
 
     List<Cluster> retrieveClusters();
 
+    Cluster updateCluster(Cluster updateCluster);
+
 
 }

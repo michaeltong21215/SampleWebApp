@@ -24,16 +24,17 @@ public class ClusterServiceImpl implements ClusterService{
 
     @Override
     public List<Cluster> deleteClusters(List<Integer> ids) {
-        List<Cluster> clusters = new ArrayList<Cluster>();
-        for(int i = 0; i < ids.size(); i++){
-            clusters.add(retrieveClusterById(ids.get(i)));
-        }
         return clustersDao.deleteClusters(ids);
     }
 
     @Override
     public List<Cluster> retrieveClusters() {
         return clustersDao.retrieveClusters();
+    }
+
+    @Override
+    public Cluster updateCluster(Cluster updateCluster) {
+        return clustersDao.updateCluster(updateCluster);
     }
 
     public Cluster retrieveClusterById(int id) {
