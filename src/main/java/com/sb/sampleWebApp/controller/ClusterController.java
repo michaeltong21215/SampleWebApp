@@ -12,33 +12,27 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("/v1")
-public class ClusterResource {
+@RequestMapping("/v1/clusters")
+public class ClusterController {
     @Autowired
     ClusterService clusterService;
 
-    @GetMapping("/hello")
-    public String hello(){
-        return "you are hitting endpoint";
-    }
-
-    //@PostMapping("/cluster")
-    @RequestMapping(value = "/cluster", method=RequestMethod.POST)
+    @PostMapping
     public ResponseEntity<List<Cluster>> createClusters(@RequestBody List<Cluster> clusters){
         return new ResponseEntity<List<Cluster>>(clusterService.createClusters(clusters), HttpStatus.CREATED);
     }
 
-    @RequestMapping(value = "/cluster", method=RequestMethod.GET)
+    @GetMapping
     public List<Cluster> retrieveClusters(){
         return clusterService.retrieveClusters();
     }
 
-    @RequestMapping(value= "/cluster", method=RequestMethod.DELETE)
+    @DeleteMapping
     public List<Cluster> deleteClusters(@RequestBody List<Integer> ids) {
         return clusterService.deleteClusters(ids);
     }
 
-    @PostMapping("/update/cluster")
+    @PutMapping
     public ResponseEntity<Cluster> updateCluster(@RequestBody Cluster updateCluster){
         return new ResponseEntity<Cluster>(clusterService.updateCluster(updateCluster), HttpStatus.CREATED);
     }
