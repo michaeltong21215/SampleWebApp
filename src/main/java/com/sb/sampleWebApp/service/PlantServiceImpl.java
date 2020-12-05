@@ -36,4 +36,9 @@ public class PlantServiceImpl implements PlantService{
     public Plant flowerPlant(int plantId) {
         return null;
     }
+
+    @Override
+    public Plant getPlantById(int plantId) {
+        return plantDao.getPlantById(plantId);
+    }
 }
