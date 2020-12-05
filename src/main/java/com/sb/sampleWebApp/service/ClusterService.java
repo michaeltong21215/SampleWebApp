@@ -13,5 +13,6 @@ public interface ClusterService {
 
     Cluster updateCluster(Cluster updateCluster);
 
+    Cluster retrieveClusterById(int id);
 
 }
