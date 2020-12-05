@@ -22,16 +22,26 @@ public class PlantController {
 
     @PutMapping
     public ResponseEntity<Plant> renamePlant(@RequestBody Plant renamePlant) {
-        return new ResponseEntity<Plant>(plantService.renamePlant(renamePlant.getPlantId(), renamePlant.getPlantName()), HttpStatus.CREATED);
+        return new ResponseEntity<Plant>(plantService.renamePlant(renamePlant.getPlantId(), renamePlant.getPlantName()), HttpStatus.OK);
     }
 
     @DeleteMapping
     public ResponseEntity<Plant> deletePlant(@RequestBody Plant deletePlant) {
-        return new ResponseEntity<Plant>(plantService.deletePlant(deletePlant), HttpStatus.CREATED);
+        return new ResponseEntity<Plant>(plantService.deletePlant(deletePlant), HttpStatus.NO_CONTENT);
     }
 
     @GetMapping
     public ResponseEntity<List<Plant>> getPlants(){
-        return new ResponseEntity<List<Plant>>(plantService.getPlants(), HttpStatus.CREATED);
+        return new ResponseEntity<List<Plant>>(plantService.getPlants(), HttpStatus.OK);
+    }
+
+    @GetMapping(value="/id")
+    public ResponseEntity<Plant> getPlantByIdParam(@RequestParam("id") int id){
+        return new ResponseEntity<Plant>(plantService.getPlantById(id), HttpStatus.OK);
+    }
+
+    @GetMapping(value="/{id}")
+    public ResponseEntity<Plant> getPlantByIdPathVariable(@PathVariable("id") int id){
+        return new ResponseEntity<Plant>(plantService.getPlantById(id), HttpStatus.OK);
     }
 }

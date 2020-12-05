@@ -10,4 +10,5 @@ public interface PlantService {
     Plant deletePlant(Plant deletePlant);
     List<Plant> getPlants();
     Plant flowerPlant(int plantId);
+    Plant getPlantById(int plantId);
 }
